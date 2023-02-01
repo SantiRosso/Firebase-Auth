@@ -1,4 +1,3 @@
-import "./firebase.js";
+import "./app/firebase.js";
 
 console.log("Hello world");
-console.log("Hello world 2");
