@@ -3,7 +3,7 @@ import { auth } from "./app/firebase.js";
 import { loginCheck } from "./app/loginCheck.js";
 import "./app/singUpForm.js";
 import "./app/logout.js";
-("./app/loginCheck.js");
+import "./app/signInForm.js";
 
 onAuthStateChanged(auth, (user) => {
   //   console.log(user);
