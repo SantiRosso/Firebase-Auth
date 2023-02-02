@@ -15,13 +15,20 @@ singUpForm.addEventListener("submit", async (e) => {
       email,
       password
     );
-    console.log(userCredentials);
 
     //close the signup Modal
     const signupModal = document.querySelector("#signUpModal");
     const modal = bootstrap.Modal.getInstance(signupModal);
     modal.hide();
   } catch (error) {
-    console.log(error);
+    if (error.code === "auth/invalid-email") {
+      alert("Invalid email");
+    } else if (error.code === "auth/weak-password") {
+      alert("Password is too weak");
+    } else if (error.code === "auth/email-already-in-use") {
+      alert("Email already in use");
+    } else if (error.code) {
+      alert("Something went wrong");
+    }
   }
 });
