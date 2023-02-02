@@ -1,4 +1,4 @@
-const showMessage = (message, type) => {
+export const showMessage = (message, type) => {
   Toastify({
     text: message,
     duration: 3000,
@@ -14,5 +14,3 @@ const showMessage = (message, type) => {
     onClick: function () {}, // Callback after click
   }).showToast();
 };
-
-export default showMessage;

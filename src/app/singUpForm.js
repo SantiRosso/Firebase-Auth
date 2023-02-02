@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
 import { auth } from "./firebase.js";
-import showMessage from "./showMessage.js";
+import { showMessage } from "./showMessage.js";
 
 const singUpForm = document.querySelector("#signup-form");
 
