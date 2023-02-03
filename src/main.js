@@ -4,6 +4,7 @@ import { loginCheck } from "./app/loginCheck.js";
 import "./app/singUpForm.js";
 import "./app/logout.js";
 import "./app/signInForm.js";
+import "./app/googleLogin.js";
 
 onAuthStateChanged(auth, (user) => {
   //   console.log(user);
